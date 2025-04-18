@@ -1,0 +1,8 @@
+Git Commands:
+------------------
+1. git clone https://github.com/DeepakKumar-DK/BackGroundScheduler.git  (first clone the repo to the local)
+2. cd .  (change directory)
+3. cd .\BackGroundScheduler\    (change the path in the cmd to point folder along with repo name)
+4. git add .  (one you copied all the file or if you already have the changes in the local and try to push)
+5. git push origin main (push them to the particular branch)
+6. git pull  (fetch the latest from the git)
