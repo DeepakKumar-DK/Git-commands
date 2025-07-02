@@ -6,3 +6,48 @@ Git Commands:
 4. git add .  (one you copied all the file or if you already have the changes in the local and try to push)
 5. git push origin main (push them to the particular branch)
 6. git pull  (fetch the latest from the git)
+
+Command Prompt:
+C:\Git\themis-install>git branch
+* main
+
+C:\Git\themis-install>git pull origin main
+From https://dev.azure.com/dact69/themis/_git/themis-install
+ * branch            main       -> FETCH_HEAD
+Already up to date.
+
+C:\Git\themis-install>
+C:\Git\themis-install>git checkout PostHog
+branch 'PostHog' set up to track 'origin/PostHog'.
+Switched to a new branch 'PostHog'
+
+C:\Git\themis-install>git branch
+* PostHog
+  main
+
+C:\Git\themis-install>git merge main
+Auto-merging src/app/constants.ts
+CONFLICT (content): Merge conflict in src/app/constants.ts
+Automatic merge failed; fix conflicts and then commit the result.
+
+C:\Git\themis-install>git add src/app/constants.ts
+
+C:\Git\themis-install>git commit -m "Resolved merge conflict in constants.ts"
+[PostHog 74cd365] Resolved merge conflict in constants.ts
+
+C:\Git\themis-install>git push origin PostHog
+Enumerating objects: 16, done.
+Counting objects: 100% (16/16), done.
+Delta compression using up to 8 threads
+Compressing objects: 100% (6/6), done.
+Writing objects: 100% (6/6), 616 bytes | 616.00 KiB/s, done.
+Total 6 (delta 5), reused 0 (delta 0), pack-reused 0 (from 0)
+remote: Analyzing objects... (6/6) (87 ms)
+remote: Validating commits... (1/1) done (6 ms)
+remote: Storing packfile... done (79 ms)
+remote: Storing index... done (51 ms)
+remote: Updating refs... done (194 ms)
+To https://dev.azure.com/dact69/themis/_git/themis-install
+   2ea4152..74cd365  PostHog -> PostHog
+
+C:\Git\themis-install>
